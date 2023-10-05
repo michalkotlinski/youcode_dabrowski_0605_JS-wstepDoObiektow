@@ -1,8 +1,13 @@
-const person = {
-    name: "Michał",
-    surname: "Kotliński",
-    age: 47,
-    sayHello: function () {
-        console.log(`Cześć! Nazywam się ${this.name} ${this.surname} i mam ${this.age} lat.`);
-    }
+const changePersonName = (person) => {
+    person.name = "Wiesław";
+}
+const init = () => {
+    const person = {
+        name: "Michał",
+        surname: "Kotliński",
+    };
+
+    changePersonName(person);
+    console.log(person.name);
 };
+init();
